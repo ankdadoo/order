@@ -3,4 +3,3 @@
 /Users/ankdadoo/projects/microservice/microservice-demo/microservice-demo-order/src/test/java/com/ewolff/microservice/order/logic/CustomerConsumerDrivenContractTest.java
 /Users/ankdadoo/projects/microservice/microservice-demo/microservice-demo-order/src/test/java/com/ewolff/microservice/order/OrderTestApp.java
 /Users/ankdadoo/projects/microservice/microservice-demo/microservice-demo-order/src/test/java/com/ewolff/microservice/order/customerstub/CustomerStub.java
-/Users/ankdadoo/projects/microservice/microservice-demo/microservice-demo-order/src/test/java/com/ewolff/microservice/order/logic/OrderWebIntegrationTest.java

@@ -59,7 +59,12 @@ class OrderController {
 		return customerClient.findAll();
 	}
 
-	@RequestMapping("/")
+	@RequestMapping("/ping")
+	public String ping() {
+		System.out.println("**** in id.html-- 2");
+		return "Pinging -- order MS ";
+	}
+	@RequestMapping("/orders")
 	public ModelAndView orderList() {
 		System.out.println("in the get order list method ");
 		return new ModelAndView("orderlist", "orders",
@@ -82,7 +87,7 @@ class OrderController {
 		return new ModelAndView("order", "order", orderRepository.findOne(id));
 	}
 
-	@RequestMapping(value = "/", method = RequestMethod.POST)
+	@RequestMapping(value = "/orders", method = RequestMethod.POST)
 	public ModelAndView post(Order order) {
 		System.out.println("**** saving order ");
 		order = orderService.order(order);
