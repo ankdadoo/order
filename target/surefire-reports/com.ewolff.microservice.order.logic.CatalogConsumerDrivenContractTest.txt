@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.ewolff.microservice.order.logic.CatalogConsumerDrivenContractTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.05 sec - in com.ewolff.microservice.order.logic.CatalogConsumerDrivenContractTest

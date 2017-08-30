@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - $(aws ecr get-login --region us-west-2)
+      - echo Pulling maven image...
+      - docker pull maven:3.3-jdk-8
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...          
+      - docker build -t order .
+      - docker tag order:latest 491590790276.dkr.ecr.us-west-2.amazonaws.com/order:latest      
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      - docker push 491590790276.dkr.ecr.us-west-2.amazonaws.com/order:latest
